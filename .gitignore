@@ -35,3 +35,5 @@
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+
+# Check merge conflict from frontend_stack branch
