@@ -36,8 +36,4 @@
 yarn-debug.log*
 .yarn-integrity
 
-<<<<<<< HEAD
-# Test merge conflict
-=======
 # Check merge conflict from frontend_stack branch
->>>>>>> frontend_stack
