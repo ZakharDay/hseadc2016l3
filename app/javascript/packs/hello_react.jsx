@@ -6,18 +6,36 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
-import Frame from '../components/Frame'
-import Rectangle from '../components/Rectangle'
+import A_Frame from '../components/1_atoms/A_Frame'
+import A_Rectangle from '../components/1_atoms/A_Rectangle'
 
-const Comics = props => (
-  <div>
-    Comics {props.name}!
-    <br/>
+export default class Comics extends React.Component {
+  constructor(props, context) {
+    super(props, context)
+  }
 
-    <Frame x="100" y="100" width="100" height="100" bgColor="yellow" borderWidth="10" borderColor="green" />
-    <Rectangle />
-  </div>
-)
+  render() {
+
+    return(
+      <div>
+        Comics {this.props.name}!
+        <br/>
+
+        <A_Frame
+          x="100"
+          y="100"
+          width="100"
+          height="100"
+          bgColor="yellow"
+          borderWidth="10"
+          borderColor="green"
+        />
+
+        <A_Rectangle />
+      </div>
+    )
+  }
+}
 
 Comics.defaultProps = {
   name: 'David'

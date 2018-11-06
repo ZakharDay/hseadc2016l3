@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
-export default class Frame extends React.Component {
+export default class A_Frame extends React.Component {
   constructor(props, context) {
     super(props, context)
 
@@ -23,7 +23,7 @@ export default class Frame extends React.Component {
     }
 
     return(
-      <div className="Frame" style={ style }>
+      <div className="A_Frame" style={ style }>
         This is the Frame!
       </div>
     )
